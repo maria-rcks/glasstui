@@ -1,0 +1,18 @@
+[package]
+name = "glasstui"
+version = "0.1.0"
+edition = "2024"
+description = "A liquid-glass magnifying lens over big bitmap text, rendered entirely in the terminal"
+repository = "https://github.com/maria-rcks/glasstui"
+license = "MIT"
+readme = "README.md"
+keywords = ["tui", "ratatui", "liquid-glass", "refraction", "terminal"]
+categories = ["command-line-utilities", "graphics"]
+
+[dependencies]
+crossterm = "0.29.0"
+font8x8 = "0.3.1"
+ratatui = "0.30.1"
+
+[profile.release]
+lto = true
